@@ -1,0 +1,450 @@
+{
+	"info": {
+		"name": "Webservisi",
+		"_postman_id": "75e51c0b-5f7c-deab-be1d-f36375b931a2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/home.php?user=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"home.php"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/read_user.php?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"read_user.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Volleyball cetvrtak",
+							"type": "text"
+						},
+						{
+							"key": "date_var",
+							"value": "2017-04-24",
+							"type": "text"
+						},
+						{
+							"key": "time_var",
+							"value": "04:01:00",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "52.21",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "58.42",
+							"type": "text"
+						},
+						{
+							"key": "minimum_players",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "maximum_players",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Opis odbojka matcha",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Ulica Broj 6",
+							"type": "text"
+						},
+						{
+							"key": "sport",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "organisator",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "update",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/create_event.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"create_event.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event details OV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/event_details_OV.php?id=2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"event_details_OV.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event players OV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/event_players_OV.php?user_id=1&event_id=1&approved=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"event_players_OV.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "event_id",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "approved",
+							"value": "1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event players PV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/event_players_PV.php?event_id=1&approved=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"event_players_PV.php"
+					],
+					"query": [
+						{
+							"key": "event_id",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "approved",
+							"value": "1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event chat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/event_chat.php?user=1&event=1&approved=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"event_chat.php"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "event",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "approved",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Join event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "event",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "approved",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/join_event.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"join_event.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/profile.php?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"profile.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/rating.php?user=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"rating.php"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple user data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/simple_user_data.php?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"simple_user_data.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Settings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "update",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "delete",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "sport",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/settings.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"settings.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
